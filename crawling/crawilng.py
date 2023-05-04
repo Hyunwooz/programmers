@@ -41,6 +41,6 @@ for i in articles:
   
 today = datetime.today().strftime("%Y%m%d_%H시%M분") 
 
-wb.save("./기사/"+today+'.xlsx')
+wb.save(f'./기사/{today}.xlsx')
 wb.close
 
