@@ -51,3 +51,10 @@
 
     return answer
 ```
+
+## 더 크게 합치기
+
+```py
+  def solution(a, b):
+    return int(max(f"{a}{b}", f"{b}{a}"))
+```
