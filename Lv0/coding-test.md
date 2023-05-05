@@ -58,3 +58,10 @@
   def solution(a, b):
     return int(max(f"{a}{b}", f"{b}{a}"))
 ```
+
+## 두 수의 연산값 비교하기
+
+```py
+def solution(a, b):
+    return max(int(f'{a}{b}'),2*a*b)
+```
