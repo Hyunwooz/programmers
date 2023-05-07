@@ -78,3 +78,13 @@ else:
     print(a,"is odd")
 
 ```
+
+## 문자열 반복해서 출력하기
+
+```py
+
+a, b = input().strip().split(' ')
+b = int(b)
+print(a*b)
+
+```
