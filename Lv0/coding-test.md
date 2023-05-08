@@ -77,6 +77,10 @@ if a % 2 == 0:
 else:
     print(a,"is odd")
 
+# 3항 연산자로 바꾸기
+
+'is even' if a % 2 == 0 else 'is odd'
+
 ```
 
 ## 문자열 반복해서 출력하기
