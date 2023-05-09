@@ -1,3 +1,5 @@
+# Programmers Lv0 코딩테스트 연습문제
+
 ## 대소문자 바꿔서 출력하기
 
 ```python
@@ -91,4 +93,54 @@ a, b = input().strip().split(' ')
 b = int(b)
 print(a*b)
 
+```
+
+## n의 배수
+
+```py
+
+def solution(num, n):
+    if num % n ==0:
+        answer = 1
+    else:
+        answer = 0
+    return answer
+
+```
+
+## n의 배수
+
+```py
+
+def solution(num, n):
+    if num % n ==0:
+        answer = 1
+    else:
+        answer = 0
+    return answer
+
+```
+
+## 공배수
+
+```py
+
+def solution(number, n, m):
+    if number % n == 0 and number % m == 0:
+        answer = 1
+    else:
+        answer = 0
+    return answer
+
+```
+
+## 홀짝에 따라 다른 값 반환하기
+
+```py
+
+def solution(n):
+    if n % 2 == 0:
+        return sum([i ** 2 for i in range(2,n+1,2)])
+    else:
+        return sum([i for i in range(1,n+1,2)])
 ```
