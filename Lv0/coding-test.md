@@ -144,3 +144,13 @@ def solution(n):
     else:
         return sum([i for i in range(1,n+1,2)])
 ```
+
+## flag에 따라 다른 값 반환하기
+
+```py
+def solution(a, b, flag):
+    if flag:
+        return a + b
+    else:
+        return a - b
+```
