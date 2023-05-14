@@ -154,3 +154,31 @@ def solution(a, b, flag):
     else:
         return a - b
 ```
+
+## 조건 문자열
+
+```py
+def solution(ineq, eq, n, m):
+    if ineq == '<':
+        if eq == '=':
+            if n <= m:
+                return 1
+            else:
+                return 0
+        if eq == '!':
+            if n < m:
+                return 1
+            else:
+                return 0
+    elif ineq == '>':
+        if eq == '=':
+            if n >= m:
+                return 1
+            else:
+                return 0
+        if eq == '!':
+            if n > m:
+                return 1
+            else:
+                return 0
+```
