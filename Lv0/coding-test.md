@@ -182,3 +182,12 @@ def solution(ineq, eq, n, m):
             else:
                 return 0
 ```
+
+## 모음 제거
+
+```py
+import re
+
+def solution(my_string):
+    return re.sub(r'[aeiou]','',my_string)
+```
