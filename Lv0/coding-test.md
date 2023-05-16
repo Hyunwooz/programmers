@@ -191,3 +191,65 @@ import re
 def solution(my_string):
     return re.sub(r'[aeiou]','',my_string)
 ```
+
+## 특정 문자 제거하기
+
+```py
+import re
+
+def solution(my_string, letter):
+    return re.sub(letter,'',my_string)
+```
+
+## 숨어있는 숫자의 덧셈 (1)
+
+```py
+def solution(my_string):
+    return sum([int(i) for i in my_string if i.isdigit()])
+```
+
+## 369게임
+
+```py
+import re
+
+def solution(order):
+    p = re.compile('[369]')
+    return len(p.findall(str(order)))
+```
+
+## 잘라서 배열로 저장하기
+
+```py
+def solution(my_str, n):
+    return [my_str[i:i+n] for i in range(0, len(my_str), n)]
+
+# 정규표현식 이용하기
+def solution(my_str, n):
+    return re.findall(f'.{{1,{n}}}',my_str)
+
+```
+
+## 영어가 싫어요
+
+```py
+import re
+
+def solution(numbers):
+    s = ''
+    d = {
+    'zero': 0,
+    'one': 1,
+    'two': 2,
+    'three': 3,
+    'four': 4,
+    'five': 5,
+    'six': 6,
+    'seven': 7,
+    'eight': 8,
+    'nine': 9
+    }
+    for i in re.findall(r'(zero|one|two|three|four|five|six|seven|eight|nine)', numbers):
+        s += str(d[i])
+    return int(s)
+```
