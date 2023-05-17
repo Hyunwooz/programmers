@@ -253,3 +253,55 @@ def solution(numbers):
         s += str(d[i])
     return int(s)
 ```
+
+## 중복된 숫자 개수
+
+```py
+def solution(array, n):
+    return array.count(n)
+```
+
+## 머쓱이보다 키 큰 사람
+
+```py
+def solution(array, height):
+    return len(list(filter(lambda x:x>height,array)))
+```
+
+## 자릿수 더하기
+
+```py
+def solution(n):
+    answer = sum(list(map(int, str(n))))
+    return answer
+```
+
+## 숨어있는 숫자의 덧셈(2)
+
+```py
+import re
+
+def solution(my_string):
+    return sum(map(int,re.findall(r'[\d]+',my_string)))
+```
+
+## 옹알이 (1)
+
+```py
+import re
+
+def solution(babbling):
+
+    def find_Right_words(text):
+        text = re.sub(r'aya|ye|ma|woo','',text)
+        if len(text) == 0:
+            return True
+
+    answer = 0
+
+    for i in babbling:
+        if find_Right_words(i):
+            answer += 1
+
+    return answer
+```
