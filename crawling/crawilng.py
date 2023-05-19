@@ -7,10 +7,10 @@ from openpyxl.styles import Font
 from openpyxl.styles import Alignment
 from datetime import datetime
 
-html = urlopen("https://www.lawtimes.co.kr/Legal-News/Legal-News-List?page=1")
+html = urlopen("https://") # 크롤링 하고자 하는 주소
 bsobj = BeautifulSoup(html , "html.parser")
 
-utl_intro = 'https://www.lawtimes.co.kr/'
+utl_intro = 'https://' # url 앞부분
 
 article_div = bsobj.find("div", "tabs4")
 articles = article_div.find_all("article", "article-list")
