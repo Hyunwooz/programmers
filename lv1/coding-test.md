@@ -27,3 +27,18 @@ def solution(players, callings):
 # 탐색시 key값이 있으면 굳이 배열의 전체를 탐색하지 않고도 value를 얻을 수 있다.
 # 이로 인해 list와 dictionary의 탐색속도가 차이가 발생함
 ```
+
+## 추억 점수
+
+```py
+def solution(name, yearning, photo):
+    dicts = dict(zip(name,yearning))
+    answer = []
+    for i in photo:
+        point = 0
+        for j in i:
+            if j in dicts:
+                point += dicts[j]
+        answer.append(point)
+    return answer
+```
