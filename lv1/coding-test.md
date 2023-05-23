@@ -93,3 +93,39 @@ def solution(park, routes):
 
     return [y, x]
 ```
+
+## 바탕화면 정리
+
+```py
+def solution(wallpaper):
+    x, y = [], []
+
+    for i in range(len(wallpaper)):
+        for j in range(len(wallpaper[0])):
+            if wallpaper[i][j] == '#':
+                x.append(int(i))
+                y.append(int(j))
+
+    lux,luy,rdx,rdy = min(x),min(y),max(x)+1,max(y)+1
+
+    return lux,luy,rdx,rdy
+```
+
+## 덧칠하기
+
+```py
+def solution(n, m, section):
+    answer = 1
+    start = section[0]
+    for i in range(1, len(section)):
+        if section[i] - start >= m:
+            answer += 1
+            start = section[i]
+    return answer
+```
+
+## 문제 이름
+
+```py
+code
+```
