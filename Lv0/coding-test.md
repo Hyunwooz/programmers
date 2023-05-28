@@ -360,6 +360,22 @@ def solution(a, d, included):
 code
 ```
 
+## 주사위 게임 2
+
+```py
+def solution(a, b, c):
+    answer = 0
+    l = [a,b,c]
+    set_l = set(l)
+    if len(set_l) == 3:
+        answer = (a + b + c)
+    elif len(set_l) == 2:
+        answer = (a + b + c) * (a ** 2 + b ** 2 + c ** 2)
+    elif len(set_l) == 1:
+        answer = (a + b + c) * (a ** 2 + b ** 2 + c ** 2) * (a ** 3 + b ** 3 + c ** 3)
+    return answer
+```
+
 ## 문제 이름
 
 ```py
