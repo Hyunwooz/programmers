@@ -27,20 +27,30 @@
 
 # print(solution([[1, 4], [9, 2], [3, 8], [11, 6]]))
 
-def solution(a, b, c):
-    answer = 0
-    l = [a,b,c]
-    set_l = set(l)
-    if len(set_l) == 3:
-        answer = (a + b + c)
-    elif len(set_l) == 2:
-        answer = (a + b + c) * (a ** 2 + b ** 2 + c ** 2)
-    elif len(set_l) == 1:
-        answer = (a + b + c) * (a ** 2 + b ** 2 + c ** 2) * (a ** 3 + b ** 3 + c ** 3)
-    return answer
+# def solution(a, b, c):
+#     answer = 0
+#     l = [a,b,c]
+#     set_l = set(l)
+#     if len(set_l) == 3:
+#         answer = (a + b + c)
+#     elif len(set_l) == 2:
+#         answer = (a + b + c) * (a ** 2 + b ** 2 + c ** 2)
+#     elif len(set_l) == 1:
+#         answer = (a + b + c) * (a ** 2 + b ** 2 + c ** 2) * (a ** 3 + b ** 3 + c ** 3)
+#     return answer
 
-a = 2
-b = 6
-c = 1
+# a = 2
+# b = 6
+# c = 1
 
-print(solution(a, b, c))
+# print(solution(a, b, c))
+
+l = [3,4,5,2,1]
+a = 0
+for i in range(len(l)):
+    if i == 0:
+        a = l[i]
+    else:
+        a *= l[i]
+
+print(sum(l) ** 2)

@@ -354,12 +354,6 @@ def solution(a, d, included):
     return answer
 ```
 
-## 평행
-
-```py
-code
-```
-
 ## 주사위 게임 2
 
 ```py
@@ -374,6 +368,50 @@ def solution(a, b, c):
     elif len(set_l) == 1:
         answer = (a + b + c) * (a ** 2 + b ** 2 + c ** 2) * (a ** 3 + b ** 3 + c ** 3)
     return answer
+```
+
+## 원소들의 곱과 합
+
+```py
+def solution(num_list):
+    a = 0
+    for i in range(len(num_list)):
+        if i == 0:
+            a = num_list[i]
+        else:
+            a *= num_list[i]
+
+    if a > sum(num_list) ** 2:
+        return 0
+
+    return 1
+```
+
+## 이어 붙인 수
+
+```py
+def solution(num_list):
+    h = ''
+    z = ''
+    for i in num_list:
+        if i % 2 == 0:
+            z += str(i)
+        else:
+            h += str(i)
+
+    return int(h) + int(z)
+```
+
+## 마지막 두 원소
+
+```py
+def solution(num_list):
+    if num_list[-2] >= num_list[-1]:
+        num_list.append(num_list[-1] * 2)
+    else:
+        num_list.append(num_list[-1] - num_list[-2])
+
+    return num_list
 ```
 
 ## 문제 이름
