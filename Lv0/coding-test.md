@@ -414,6 +414,41 @@ def solution(num_list):
     return num_list
 ```
 
+## 수 조작하기 1
+
+```py
+def solution(n, control):
+    for i in control:
+        if i == 'w':
+            n += 1
+        elif i == 's':
+            n -= 1
+        elif i == 'd':
+            n += 10
+        elif i == 'a':
+            n -= 10
+
+    return n
+```
+
+## 수 조작하기 2
+
+```py
+def solution(numLog):
+    result = ''
+    for i in range(1,len(numLog)):
+        if numLog[i] - numLog[i - 1] == 1:
+            result += 'w'
+        elif numLog[i] - numLog[i - 1] == -1:
+            result += 's'
+        elif numLog[i] - numLog[i - 1] == 10:
+            result += 'd'
+        elif numLog[i] - numLog[i - 1] == -10:
+            result += 'a'
+
+    return result
+```
+
 ## 문제 이름
 
 ```py
