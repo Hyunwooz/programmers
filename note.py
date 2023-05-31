@@ -27,30 +27,16 @@
 
 # print(solution([[1, 4], [9, 2], [3, 8], [11, 6]]))
 
-# def solution(a, b, c):
-#     answer = 0
-#     l = [a,b,c]
-#     set_l = set(l)
-#     if len(set_l) == 3:
-#         answer = (a + b + c)
-#     elif len(set_l) == 2:
-#         answer = (a + b + c) * (a ** 2 + b ** 2 + c ** 2)
-#     elif len(set_l) == 1:
-#         answer = (a + b + c) * (a ** 2 + b ** 2 + c ** 2) * (a ** 3 + b ** 3 + c ** 3)
-#     return answer
+arr = [0, 1, 2, 4, 3]
+queries = [[0, 4, 1],[0, 3, 2],[0, 3, 3]]
 
-# a = 2
-# b = 6
-# c = 1
+def solution(arr, queries):
+    for s,e,k in queries:
+        for i in range(s,e+1):
+            if i % k == 0:
+                arr[i] += 1
+    return arr
 
-# print(solution(a, b, c))
+# [3, 4, 1, 0, 2]
 
-l = [3,4,5,2,1]
-a = 0
-for i in range(len(l)):
-    if i == 0:
-        a = l[i]
-    else:
-        a *= l[i]
-
-print(sum(l) ** 2)
+print(solution(arr,queries))

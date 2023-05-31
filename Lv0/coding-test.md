@@ -449,6 +449,28 @@ def solution(numLog):
     return result
 ```
 
+## 수열과 구간 쿼리 3
+
+```py
+def solution(arr, queries):
+
+    for i,j in queries:
+        arr[i] , arr[j] = arr[j] , arr[i]
+
+    return arr
+```
+
+## 수열과 구간 쿼리 4
+
+```py
+def solution(arr, queries):
+    for s,e,k in queries:
+        for i in range(s,e+1):
+            if i % k == 0:
+                arr[i] += 1
+    return arr
+```
+
 ## 문제 이름
 
 ```py
