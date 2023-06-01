@@ -471,6 +471,29 @@ def solution(arr, queries):
     return arr
 ```
 
+## 카운트 업
+
+```py
+def solution(start, end):
+    return list(range(start,end+1))
+```
+
+## 콜라츠 수열 만들기
+
+```py
+def solution(n):
+    answer = [n]
+    while n != 1:
+        if n % 2 == 0:
+            n = n // 2
+            answer.append(n)
+        else:
+            n = 3 * n + 1
+            answer.append(n)
+
+    return answer
+```
+
 ## 문제 이름
 
 ```py
