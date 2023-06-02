@@ -11,6 +11,17 @@
 # # [3, 4, 1, 0, 2]
 
 # print(solution(arr,queries))
-def solution(arr):
-    stk = []
-    return stk
+def solution(my_string, m, c):
+    answer = ""
+    s = list(map(''.join, zip(*[iter(my_string)]*m)))
+    print(s)
+    for i in s:
+        answer += i[c-1]
+    
+    return answer
+
+my_string = "ihrhbakrfpndopljhygc"
+m = 4
+c = 2
+
+print(solution(my_string, m, c))

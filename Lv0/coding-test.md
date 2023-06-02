@@ -494,8 +494,34 @@ def solution(n):
     return answer
 ```
 
-## 문제 이름
+## 글자 이어 붙여 문자열 만들기
 
 ```py
-code
+def solution(my_string, index_list):
+    answer = ''
+    for i in index_list:
+        answer += my_string[i]
+
+    return answer
+```
+
+## 9로 나눈 나머지
+
+```py
+def solution(number):
+    answer = int(number) % 9
+    return answer
+```
+
+## 세로 읽기
+
+```py
+def solution(my_string, m, c):
+    answer = ""
+    s = list(map(''.join, zip(*[iter(my_string)]*m)))
+
+    for i in s:
+        answer += i[c-1]
+
+    return answer
 ```
