@@ -525,3 +525,14 @@ def solution(my_string, m, c):
 
     return answer
 ```
+
+## 카운트 다운
+
+```py
+def solution(start, end):
+    answer = []
+    while start != end-1:
+        answer.append(start)
+        start -= 1
+    return answer
+```
