@@ -536,3 +536,12 @@ def solution(start, end):
         start -= 1
     return answer
 ```
+
+## 문자열의 앞의 n글자
+
+```py
+def solution(my_string, n):
+    answer = my_string[0:n]
+
+    return answer
+```
