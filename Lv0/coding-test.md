@@ -545,3 +545,18 @@ def solution(my_string, n):
 
     return answer
 ```
+
+## 글자 지우기
+
+```py
+def solution(my_string, indices):
+    indices = sorted(indices)
+    s = list(my_string)
+    n = 0
+
+    for i in indices:
+        s.pop(i-n)
+        n += 1
+
+    return ''.join(s)
+```

@@ -11,17 +11,33 @@
 # # [3, 4, 1, 0, 2]
 
 # print(solution(arr,queries))
-def solution(my_string, m, c):
-    answer = ""
-    s = list(map(''.join, zip(*[iter(my_string)]*m)))
-    print(s)
-    for i in s:
-        answer += i[c-1]
+# def solution(my_string, m, c):
+#     answer = ""
+#     s = list(map(''.join, zip(*[iter(my_string)]*m)))
+#     print(s)
+#     for i in s:
+#         answer += i[c-1]
     
-    return answer
+#     return answer
 
-my_string = "ihrhbakrfpndopljhygc"
-m = 4
-c = 2
+# my_string = "ihrhbakrfpndopljhygc"
+# m = 4
+# c = 2
 
-print(solution(my_string, m, c))
+# print(solution(my_string, m, c))
+
+def solution(my_string, indices):
+    indices = sorted(indices)
+    s = list(my_string)
+    n = 0
+    
+    for i in indices:
+        s.pop(i-n)
+        n += 1
+        
+    return ''.join(s)
+
+my_string = "apporoograpemmemprs"
+indices =	[1, 16, 6, 15, 0, 10, 11, 3]
+
+print(solution(my_string, indices))
