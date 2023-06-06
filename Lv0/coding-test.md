@@ -560,3 +560,21 @@ def solution(my_string, indices):
 
     return ''.join(s)
 ```
+
+## 첫 번째로 나오는 음수
+
+```py
+def solution(num_list):
+    answer = -1
+    negative = 0
+    for i in num_list:
+        answer += 1
+        if i < 0:
+            negative += 1
+            break
+
+    if negative == 0:
+        answer = -1
+
+    return answer
+```
