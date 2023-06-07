@@ -140,6 +140,30 @@ def solution(cards1, cards2, goal):
     return 'Yes'
 ```
 
+## 크기가 작은 부분문자열
+
+```py
+def solution(t, p):
+    answer = 0
+    for i in range(len(t)):
+        new = t[i:i+len(p)]
+        if int(new) <= int(p) and len(new) == len(p):
+            answer += 1
+    return answer
+```
+
+## 푸드 파이트 대회
+
+```py
+def solution(food):
+    w = ''
+    for i in range(len(food)):
+        if i > 0:
+            w += str(i) * (food[i] // 2)
+
+    return w + "0" + w[::-1]
+```
+
 ## 문제 이름
 
 ```py
