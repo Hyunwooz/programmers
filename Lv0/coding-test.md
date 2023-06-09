@@ -578,3 +578,23 @@ def solution(num_list):
 
     return answer
 ```
+
+## 홀수 vs 짝수
+
+```py
+def solution(num_list):
+    odd = 0
+    even = 0
+    for n in range(len(num_list)):
+        if n % 2 == 0:
+            even += num_list[n]
+        else:
+            odd += num_list[n]
+
+    if odd > even:
+        answer = odd
+    else:
+        answer = even
+
+    return answer
+```
