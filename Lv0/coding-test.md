@@ -619,3 +619,20 @@ def solution(arr):
             answer.append(i)
     return answer
 ```
+
+## 가까운 수
+
+```py
+def solution(array, n):
+    l = []
+    array.sort()
+    for i in array:
+        l.append(abs(n-i))
+
+    answer = [array[l.index(min(l))]]
+
+    if len(answer) > 1:
+        return min(answer)
+    else:
+        return answer[0]
+```
