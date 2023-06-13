@@ -649,8 +649,20 @@ def solution(x1, x2, x3, x4):
     return answer
 ```
 
-## 제목
+## n 번째 원소까지
 
 ```py
-code
+def solution(num_list, n):
+    answer = []
+
+    for i in range(0,n):
+        answer.append(num_list[i])
+
+    return answer
+```
+
+## ㅇㅁㅇㄴ
+
+```py
+ㅁㄴㅇ
 ```
