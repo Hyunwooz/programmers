@@ -636,3 +636,21 @@ def solution(array, n):
     else:
         return answer[0]
 ```
+
+## 간단한 논리 연산
+
+```py
+def solution(x1, x2, x3, x4):
+
+    if (x1 or x2) and (x3 or x4):
+        answer = True
+    else:
+        answer = False
+    return answer
+```
+
+## 제목
+
+```py
+code
+```
