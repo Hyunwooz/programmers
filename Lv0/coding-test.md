@@ -661,7 +661,22 @@ def solution(num_list, n):
     return answer
 ```
 
-## ㅇㅁㅇㄴ
+## 배열 조각하기
+
+```py
+def solution(arr, query):
+
+    for i in range(len(query)):
+        curr = query[i]
+
+        if i % 2 == 0:
+            arr = arr[:curr+1]
+        else:
+            arr = arr[curr:]
+    return arr
+```
+
+## ㅁ
 
 ```py
 ㅁㄴㅇ
