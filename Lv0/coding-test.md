@@ -676,6 +676,41 @@ def solution(arr, query):
     return arr
 ```
 
+## 겹치는 선분의 길이
+
+```py
+# 파이써닉한 코드를 위해 고민해야함.
+def solution(lines):
+    l1,l2,l3 = lines
+    li = []
+    answer = 0
+
+    def f(x):
+        if len(x) >= 2:
+            li.append(x)
+
+    a = list(range(l1[0] , l1[1]+1))
+    b = list(range(l2[0] , l2[1]+1))
+    c = list(range(l3[0] , l3[1]+1))
+
+    ab = list(filter(lambda x : x in b, a))
+    ac = list(filter(lambda x : x in c, a))
+    bc = list(filter(lambda x : x in c, b))
+
+    f(ab)
+    f(ac)
+    f(bc)
+
+    if len(li) == 3:
+        sortlist = sorted(set(ab+ac+bc))
+        answer += sortlist[-1] - sortlist[0]
+    else:
+        for i in li:
+            answer += i[-1] - i[0]
+
+    return answer
+```
+
 ## ㅁ
 
 ```py
