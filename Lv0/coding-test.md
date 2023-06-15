@@ -711,8 +711,20 @@ def solution(lines):
     return answer
 ```
 
-## ㅁ
+## 특이한 정렬
 
 ```py
-ㅁㄴㅇ
+def solution(numlist, n):
+
+    numlist.sort(reverse=True)
+
+    answer = sorted(numlist,key=lambda x : abs(n - x))
+
+    return answer
+```
+
+## asd
+
+```py
+code
 ```
