@@ -164,6 +164,77 @@ def solution(food):
     return w + "0" + w[::-1]
 ```
 
+## 명예의 전당(1)
+
+```py
+def solution(k, score):
+    
+    answer = []
+    new_list = []
+    
+    for i in score:
+        
+        new_list.sort(reverse=True)
+        
+        if len(new_list) < k:
+            new_list.append(i)
+            answer.append(min(new_list))
+        else:
+            if i > min(new_list):
+                new_list.pop() 
+                new_list.append(i)
+            answer.append(min(new_list))
+    
+    return answer
+```
+
+## 과일 장수
+
+```py
+def solution(k, m, score):
+
+    score = list(filter(lambda x : x <= k,score))
+    score.sort(reverse=True)
+    boxes = len(score) // m
+
+    s, e = 0, m
+
+    answer = 0
+
+    for i in range(0,boxes):
+        price = score[s:e]
+        answer += min(price) * len(price)
+        s = s + m
+        e = e + m  
+    
+    return answer
+```
+
+## 문제 이름
+
+```py
+code
+```
+## 문제 이름
+
+```py
+code
+```
+## 문제 이름
+
+```py
+code
+```
+## 문제 이름
+
+```py
+code
+```
+## 문제 이름
+
+```py
+code
+```
 ## 문제 이름
 
 ```py
