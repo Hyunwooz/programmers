@@ -168,23 +168,23 @@ def solution(food):
 
 ```py
 def solution(k, score):
-    
+
     answer = []
     new_list = []
-    
+
     for i in score:
-        
+
         new_list.sort(reverse=True)
-        
+
         if len(new_list) < k:
             new_list.append(i)
             answer.append(min(new_list))
         else:
             if i > min(new_list):
-                new_list.pop() 
+                new_list.pop()
                 new_list.append(i)
             answer.append(min(new_list))
-    
+
     return answer
 ```
 
@@ -205,36 +205,44 @@ def solution(k, m, score):
         price = score[s:e]
         answer += min(price) * len(price)
         s = s + m
-        e = e + m  
-    
+        e = e + m
+
     return answer
 ```
 
+## 자릿수 더하기
+
+```py
+def solution(n):
+    answer = [int(i) for i in str(n)]
+
+    return sum(answer)
+```
+
 ## 문제 이름
 
 ```py
 code
 ```
+
 ## 문제 이름
 
 ```py
 code
 ```
+
 ## 문제 이름
 
 ```py
 code
 ```
+
 ## 문제 이름
 
 ```py
 code
 ```
-## 문제 이름
 
-```py
-code
-```
 ## 문제 이름
 
 ```py
