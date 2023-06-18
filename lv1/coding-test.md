@@ -231,10 +231,11 @@ def solution(n):
     return answer
 ```
 
-## 문제 이름
+## x만큼 간격이 있는 n개의 숫자
 
 ```py
-code
+def solution(x, n):
+    return [x+(x*i) for i in range(0,n)]
 ```
 
 ## 문제 이름
