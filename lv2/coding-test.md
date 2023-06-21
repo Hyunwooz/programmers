@@ -38,3 +38,17 @@ def solution(s):
 
     return True
 ```
+
+## 최솟값 만들기
+
+```py
+def solution(A,B):
+    answer = 0
+    t1 = sorted(A)
+    t2 = sorted(B,reverse=True)
+
+    for i in range(len(t1)):
+        answer += t1[i] * t2[i]
+
+    return answer
+```
