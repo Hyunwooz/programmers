@@ -1,11 +1,14 @@
-def solution(ingredient):
-    answer = 0
-    stack=[]
+def solution(s):
+    answer = []
+    z = 0
+    cnt = 0
     
-    for i in range(len(ingredient)):
-        stack.append(ingredient[i])
-        if [1,2,3,1] == stack[-4:]:
-            answer += 1
-            for i in range(4):
-                stack.pop()
-    return answer
+    while s != '1':
+        
+        z = z + s.count('0')
+        
+        cnt += 1
+
+s="110010101001"
+
+print(solution(s))
