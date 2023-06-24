@@ -257,10 +257,15 @@ def solution(ingredient):
     return answer
 ```
 
-## 문제 이름
+## 약수의 합
 
 ```py
-code
+def solution(n):
+    answer = 0
+    for i in range(1,n+1):
+        if n % i == 0:
+            answer += i
+    return answer
 ```
 
 ## 문제 이름
