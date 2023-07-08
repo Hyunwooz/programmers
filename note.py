@@ -1,14 +1,8 @@
-def solution(s):
-    answer = []
-    z = 0
-    cnt = 0
-    
-    while s != '1':
-        
-        z = z + s.count('0')
-        
-        cnt += 1
+def solution(my_string, n):
+    answer = my_string[-n:]
+    return answer
 
-s="110010101001"
+my_string = "ProgrammerS123"
+n = 5
 
-print(solution(s))
+print(solution(my_string,n))

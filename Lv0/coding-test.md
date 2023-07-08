@@ -723,6 +723,14 @@ def solution(numlist, n):
     return answer
 ```
 
+## 문자열의 뒤의 n글자
+
+```py
+def solution(my_string, n):
+    answer = my_string[-n:]
+    return answer
+```
+
 ## asd
 
 ```py
