@@ -731,7 +731,15 @@ def solution(my_string, n):
     return answer
 ```
 
-## asd
+## 배열의 평균값
+
+```py
+def solution(numbers):
+    answer = sum(numbers) / len(numbers)
+    return answer
+```
+
+## 배열의 평균값
 
 ```py
 code
