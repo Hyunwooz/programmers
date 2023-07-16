@@ -1,8 +1,14 @@
-def solution(my_string, n):
-    answer = my_string[-n:]
-    return answer
+def solution(s):
+    is_p = s.lower().count("p")
+    is_y = s.lower().count("s")
+    
+    if is_p == is_y:
+        return True
+    elif is_p == 0 and is_y == 0:
+        return True
+    else:
+        return False
 
-my_string = "ProgrammerS123"
-n = 5
+my_string = "pPoooyY"
 
-print(solution(my_string,n))
+print(solution(my_string))
