@@ -268,8 +268,17 @@ def solution(n):
     return answer
 ```
 
-## 문제 이름
+## 문자열 내 p와 y의 개수
 
 ```py
-code
+def solution(s):
+    is_p = s.lower().count("p")
+    is_y = s.lower().count("y")
+    
+    if is_p == is_y:
+        return True
+    elif is_p == 0 and is_y == 0:
+        return True
+    else:
+        return False
 ```
