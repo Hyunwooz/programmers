@@ -739,8 +739,21 @@ def solution(numbers):
     return answer
 ```
 
-## 배열의 평균값
+## 나이 출력
 
 ```py
-code
+def solution(age):
+    answer = 2023 - age 
+    return answer
+```
+
+## 양꼬치
+
+```py
+import math
+
+def solution(n, k):
+    x = math.floor(n/10)
+    answer = n * 12000 + k * 2000 - x * 2000
+    return answer
 ```
