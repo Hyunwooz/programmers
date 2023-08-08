@@ -757,3 +757,18 @@ def solution(n, k):
     answer = n * 12000 + k * 2000 - x * 2000
     return answer
 ```
+
+## 각도기
+
+```py
+def solution(angle):
+    if 0 < angle < 90:
+        answer = 1
+    elif angle == 90:
+        answer = 2
+    elif 180 > angle > 90:
+        answer = 3
+    elif angle == 180:
+        answer = 4
+    return answer
+```
