@@ -772,3 +772,11 @@ def solution(angle):
         answer = 4
     return answer
 ```
+
+## 편지
+
+```py
+def solution(message):
+    answer = len(message)*2
+    return answer
+```
