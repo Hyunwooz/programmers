@@ -282,3 +282,22 @@ def solution(s):
     else:
         return False
 ```
+
+## 가장 가까운 같은 글자
+
+```py
+def solution(s):
+    new_str = []
+    answer = []
+    for w in s:
+        if w in new_str:
+            index_ = list(filter(lambda x: new_str[x] == w, range(len(new_str))))
+            max_ = max(index_)
+            new_str.append(w)
+            answer.append(len(new_str) - max_ -1)
+        else:
+            new_str.append(w)
+            answer.append(-1)
+            
+    return answer
+```
