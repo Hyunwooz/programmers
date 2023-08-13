@@ -780,3 +780,17 @@ def solution(message):
     answer = len(message)*2
     return answer
 ```
+
+## 최댓값 만들기 (1)
+
+```py
+def solution(numbers):
+    arr = []
+    for i in range(0,2):
+        max_ = max(numbers)
+        idx = numbers.index(max_)
+        rec = numbers.pop(idx)
+        arr.append(rec)
+        
+    return arr[0] * arr[1]
+```
