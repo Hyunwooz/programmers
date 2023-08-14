@@ -301,3 +301,11 @@ def solution(s):
             
     return answer
 ```
+
+## 문자열을 정수로 바꾸기
+
+```py
+def solution(s):
+    answer = int(s)
+    return answer
+```
