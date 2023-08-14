@@ -309,3 +309,13 @@ def solution(s):
     answer = int(s)
     return answer
 ```
+
+## 정수 내림차순으로 배치하기
+
+```py
+def solution(n):
+    list_ = list(str(n))
+    list_.sort(reverse = True)
+    answer = "".join(list_)
+    return int(answer)
+```
