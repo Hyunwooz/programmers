@@ -1,6 +1,9 @@
-import json
+def solution(phone_number):
+    
+    li = list(phone_number)
+    
+    for i in range(len(phone_number)-4):
+        li[i] = '*'
+    return "".join(li)
 
-aa = "{'key': 'value'}"
-bb = json.loads(aa)
-
-print(bb)
+print(solution("01033334444"))

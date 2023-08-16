@@ -328,3 +328,15 @@ def solution(seoul):
     answer = f'김서방은 {idx}에 있다'
     return answer
 ```
+
+## 핸드폰 번호 가리기
+
+```py
+def solution(phone_number):
+    li = list(phone_number)
+    
+    for i in range(len(phone_number)-4):
+        li[i] = '*'
+        
+    return "".join(li)
+```
