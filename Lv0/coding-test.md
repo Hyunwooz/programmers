@@ -723,6 +723,14 @@ def solution(numlist, n):
     return answer
 ```
 
+## 배열 뒤집기
+
+```py
+def solution(num_list):
+    answer = num_list[::-1]
+    return answer
+```
+
 ## asd
 
 ```py
