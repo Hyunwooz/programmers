@@ -806,3 +806,11 @@ def solution(numbers):
         
     return arr[0] * arr[1]
 ```
+
+## 두수의 곱
+
+```py
+def solution(num1, num2):
+    answer = num1 * num2
+    return answer
+```
