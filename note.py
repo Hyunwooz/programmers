@@ -1,9 +1,8 @@
-def solution(phone_number):
-    
-    li = list(phone_number)
-    
-    for i in range(len(phone_number)-4):
-        li[i] = '*'
-    return "".join(li)
+def solution(a, b):
+    answer = 0
+    for i in range(a,b+1):
+        answer = answer + i
+    return answer
 
-print(solution("01033334444"))
+
+print(solution(5,3))

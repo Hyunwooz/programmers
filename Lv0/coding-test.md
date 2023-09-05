@@ -723,7 +723,19 @@ def solution(numlist, n):
     return answer
 ```
 
+<<<<<<< HEAD
 ## 문자열의 뒤의 n글자
+=======
+## 배열 뒤집기
+
+```py
+def solution(num_list):
+    answer = num_list[::-1]
+    return answer
+```
+
+## asd
+>>>>>>> Notebook
 
 ```py
 def solution(my_string, n):
@@ -803,5 +815,12 @@ def solution(money):
     coffee = money // 5500
     changes = money % 5500
     answer = [coffee,changes]
+```
+
+## 두수의 곱
+
+```py
+def solution(num1, num2):
+    answer = num1 * num2
     return answer
 ```
