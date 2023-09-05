@@ -794,3 +794,14 @@ def solution(numbers):
         
     return arr[0] * arr[1]
 ```
+
+## 아이스 아메리카노
+
+```py
+def solution(money):
+    
+    coffee = money // 5500
+    changes = money % 5500
+    answer = [coffee,changes]
+    return answer
+```
