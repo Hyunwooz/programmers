@@ -340,3 +340,18 @@ def solution(phone_number):
         
     return "".join(li)
 ```
+
+## 삼총사
+
+```py
+from itertools import *
+
+def solution(number):
+    answer = 0
+    printList = list(combinations(number, 3))
+    for li in printList:
+        if sum(li) == 0:
+            answer += 1
+            
+    return answer
+```
