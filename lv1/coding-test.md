@@ -355,3 +355,18 @@ def solution(number):
             
     return answer
 ```
+
+## K번째 수
+
+```py
+def solution(array, commands):
+    answer = []
+    
+    for command in commands:
+        x,y,z = command
+        new_array = array[x-1:y]
+        new_array.sort()
+        answer.append(new_array[z-1])
+
+    return answer
+```
