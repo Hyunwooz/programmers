@@ -1,8 +1,16 @@
-commands = [[2, 5, 3], [4, 4, 1], [1, 7, 3]]
-array = [1, 5, 2, 6, 3, 7, 4]	
-for command in commands:
-    x,y,z = command
-    new_array = array[x-1:y]
-    new_array.sort()
-    print(new_array)
-    print(new_array[z-1])
+d = [1,3,2,5,4]
+budget = 9
+
+def solution(d, budget):
+    answer = 0
+    n = 0
+    d.sort()
+    for i in d:
+        n += i
+        if n > budget:
+            break
+        answer += 1
+    
+    return answer
+
+print(solution(d, budget))
