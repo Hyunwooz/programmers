@@ -1,16 +1,14 @@
-d = [1,3,2,5,4]
-budget = 9
 
-def solution(d, budget):
-    answer = 0
-    n = 0
-    d.sort()
-    for i in d:
-        n += i
-        if n > budget:
-            break
-        answer += 1
+def solution(x):
+    int_sum = 0
+    for i in range(0,len(str(x))):
+        int_sum += int(str(x)[i])
     
+    if x % int_sum == 0:
+        answer = True
+    else:
+        answer = False
+        
     return answer
 
-print(solution(d, budget))
+print(solution(12))

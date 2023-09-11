@@ -386,3 +386,19 @@ def solution(d, budget):
     
     return answer
 ```
+
+## 하샤드 수
+
+```py
+def solution(x):
+    int_sum = 0
+    for i in range(0,len(str(x))):
+        int_sum += int(str(x)[i])
+    
+    if x % int_sum == 0:
+        answer = True
+    else:
+        answer = False
+        
+    return answer
+```
