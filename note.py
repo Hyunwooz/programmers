@@ -1,14 +1,22 @@
+from datetime import datetime
 
-def solution(x):
-    int_sum = 0
-    for i in range(0,len(str(x))):
-        int_sum += int(str(x)[i])
+def solution(a, b):
+    strToDate = datetime.strptime(f'2016-{a}-{b}', "%Y-%m-%d")
+    week = strToDate.weekday()
     
-    if x % int_sum == 0:
-        answer = True
-    else:
-        answer = False
-        
+    if week == 0:
+        answer = 'MON'
+    elif week == 1:
+        answer = 'TUE'
+    elif week == 2:
+        answer = 'WED'
+    elif week == 3:
+        answer = 'THU'
+    elif week == 4:
+        answer = 'FRI'
+    elif week == 5:
+        answer = 'SAT'
+    elif week == 6:
+        answer = 'SUN'
+    
     return answer
-
-print(solution(12))
