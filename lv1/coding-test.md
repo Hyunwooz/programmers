@@ -429,3 +429,10 @@ def solution(a, b):
     
     return answer
 ```
+
+## 두 정수의 합
+```py
+def solution(a, b):
+    int_ = [a,b]
+    return sum(list(range(min(int_),max(int_)+1)))
+```
