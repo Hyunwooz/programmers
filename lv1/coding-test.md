@@ -455,3 +455,15 @@ def solution(num):
             num = (num * 3) + 1 
     return count
 ```
+
+### 제일 작은 수 제거하기
+
+```py
+def solution(arr):
+    arr_min = min(arr)
+    idx = arr.index(arr_min)
+    arr.pop(idx)
+    if len(arr) == 0:
+        arr = [-1]
+    return arr
+```
