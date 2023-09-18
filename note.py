@@ -1,15 +1,9 @@
-def solution(num):
-    count = 0
-    while num != 1:
-        count += 1
-        if count > 500:
-            count = -1
-            break
-        
-        if num % 2 == 0:
-            num = num / 2
-        else:
-            num = (num * 3) + 1 
-    return count
+def solution(arr, divisor):
+    answer = []
+    for i in arr:
+        if i % divisor == 0:
+            answer.append(i)
+    return sorted(answer)
 
-print(solution(626331))
+
+print(solution([5, 9, 7, 10], 5))
