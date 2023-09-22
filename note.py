@@ -1,9 +1,10 @@
-def solution(arr, divisor):
-    answer = []
-    for i in arr:
-        if i % divisor == 0:
-            answer.append(i)
-    return sorted(answer)
+list_person = [
+    {'name': 'Taro', 'height': 170, 'weight': 60},
+    {'name': 'Jiro', 'height': 180, 'weight': 80},
+    {'name': 'Hanako', 'height': 160, 'weight': 50}
+]
 
+ret = next((index for (index, item) in enumerate(
+    list_person) if item['name'] == 'Taro'), None)
 
-print(solution([5, 9, 7, 10], 5))
+print(ret)

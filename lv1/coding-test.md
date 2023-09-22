@@ -480,3 +480,14 @@ def solution(arr, divisor):
         answer = [-1]
     return sorted(answer)
 ```
+
+### 없는 숫자 더하기
+
+```py
+def solution(numbers):
+    answer = 0
+    for i in range(0,10):
+        if not i in numbers:
+            answer += i
+    return answer
+```
