@@ -1,10 +1,11 @@
-list_person = [
-    {'name': 'Taro', 'height': 170, 'weight': 60},
-    {'name': 'Jiro', 'height': 180, 'weight': 80},
-    {'name': 'Hanako', 'height': 160, 'weight': 50}
-]
+def solution(s):
+    if len(s) % 2 == 0:
+        s1 = len(s) // 2 - 1
+        s2 = len(s) // 2 + 1
+        answer = s[s1:s2]
+    else:
+        answer = s[len(s) // 2]
+    
+    return answer
 
-ret = next((index for (index, item) in enumerate(
-    list_person) if item['name'] == 'Taro'), None)
-
-print(ret)
+print(solution("qwer"))
