@@ -1,11 +1,13 @@
-def solution(s):
-    if len(s) % 2 == 0:
-        s1 = len(s) // 2 - 1
-        s2 = len(s) // 2 + 1
-        answer = s[s1:s2]
-    else:
-        answer = s[len(s) // 2]
-    
+def solution(arr):
+    answer = []
+
+    for x,y in enumerate(arr):
+        if x == 0:
+            answer.append(y)
+            continue
+        if y != answer[-1]:
+            answer.append(y)
+            
     return answer
 
-print(solution("qwer"))
+print(solution([1,1,3,3,0,1,1]))

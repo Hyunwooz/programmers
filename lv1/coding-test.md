@@ -530,3 +530,19 @@ def solution(s):
     
     return answer
 ```
+
+# 같은 숫자는 싫어
+
+```py
+def solution(arr):
+    answer = []
+
+    for x,y in enumerate(arr):
+        if x == 0:
+            answer.append(y)
+            continue
+        if y != answer[-1]:
+            answer.append(y)
+            
+    return answer
+```
