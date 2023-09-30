@@ -557,3 +557,10 @@ def solution(n):
             answer += '수'
     return answer
 ```
+
+# 직사각형 별찍기
+
+```py
+a, b = map(int, input().strip().split(' '))
+print(('*'*a+'\n')*b)
+```
