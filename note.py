@@ -1,13 +1,14 @@
-def solution(arr):
-    answer = []
+def solution(s):
+    strings = s.split(' ')
+    new_list = []
+    for string in strings:
+        result = ''
+        for n,v in enumerate(string):
+            if n % 2 == 0:
+                result += v.upper()
+            else:
+                result += v.lower()
+        new_list.append(result)
+    return ' '.join(new_list)
 
-    for x,y in enumerate(arr):
-        if x == 0:
-            answer.append(y)
-            continue
-        if y != answer[-1]:
-            answer.append(y)
-            
-    return answer
-
-print(solution([1,1,3,3,0,1,1]))
+print(solution("try hello wewr world"))
