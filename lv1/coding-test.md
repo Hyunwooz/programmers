@@ -564,3 +564,13 @@ def solution(n):
 a, b = map(int, input().strip().split(' '))
 print(('*'*a+'\n')*b)
 ```
+
+# 내적
+
+```py
+def solution(a, b):
+    answer = 0
+    for i in range(0,len(a)):
+        answer += a[i]*b[i]
+    return answer
+```
