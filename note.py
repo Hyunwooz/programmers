@@ -1,14 +1,10 @@
 def solution(s):
-    strings = s.split(' ')
-    new_list = []
-    for string in strings:
-        result = ''
-        for n,v in enumerate(string):
-            if n % 2 == 0:
-                result += v.upper()
-            else:
-                result += v.lower()
-        new_list.append(result)
-    return ' '.join(new_list)
+    
+    words = ["zero","one","two","three","four","five","six","seven","eight","nine"]
+    
+    for n,v in enumerate(words):
+        s = s.replace(v,str(n))
 
-print(solution("try hello wewr world"))
+    return int(s)
+
+print(solution("23four5six7"))
