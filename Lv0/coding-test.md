@@ -834,3 +834,22 @@ def solution(num_list):
     answer = [a,b]
     return answer
 ```
+
+## 조건에 맞게 수열 변환하기 1
+
+```py
+def solution(arr):
+    answer = []
+    for i in arr:
+        if i >= 50:
+            if i % 2 == 0:
+                answer.append(i/2)
+            else:
+                answer.append(i)
+        else:
+            if i % 2 != 0:
+                answer.append(i*2)
+            else:
+                answer.append(i)
+    return answer
+```
