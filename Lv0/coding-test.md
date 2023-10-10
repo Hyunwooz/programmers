@@ -853,3 +853,11 @@ def solution(arr):
                 answer.append(i)
     return answer
 ```
+
+## 소문자로 바꾸기
+
+```py
+def solution(myString):
+    answer = myString.lower()
+    return answer
+```
