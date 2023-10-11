@@ -1,10 +1,9 @@
-def solution(s):
-    
-    words = ["zero","one","two","three","four","five","six","seven","eight","nine"]
-    
-    for n,v in enumerate(words):
-        s = s.replace(v,str(n))
+def solution(n):
+    answer = ''
+    while n >= 1:
+        n, rest = divmod(n,3)
+        answer += str(rest)
+        
+    return int(answer,3)
 
-    return int(s)
-
-print(solution("23four5six7"))
+print(solution(45))

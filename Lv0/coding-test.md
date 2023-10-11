@@ -861,3 +861,15 @@ def solution(myString):
     answer = myString.lower()
     return answer
 ```
+
+## 3진법 뒤집기
+
+```py
+def solution(n):
+    answer = ''
+    while n >= 1:
+        n, rest = divmod(n,3)
+        answer += str(rest)
+        
+    return int(answer,3)
+```
