@@ -1,9 +1,10 @@
-def solution(n):
-    answer = ''
-    while n >= 1:
-        n, rest = divmod(n,3)
-        answer += str(rest)
-        
-    return int(answer,3)
+def solution(a, b, n):
+    answer = 0
+    while n >= a:
+        t, r = divmod(n,a)
+        n = (t * b) + r
+        answer += t * b
 
-print(solution(45))
+    return answer
+
+print(solution(3, 1, 25))
