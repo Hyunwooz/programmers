@@ -873,3 +873,10 @@ def solution(n):
         
     return int(answer,3)
 ```
+
+## x 사이의 개수
+
+```py
+def solution(myString):
+    return [len(i) for i in myString.split('x')]
+```

@@ -1,10 +1,4 @@
-def solution(a, b, n):
-    answer = 0
-    while n >= a:
-        t, r = divmod(n,a)
-        n = (t * b) + r
-        answer += t * b
+def solution(myString):
+    return [len(i) for i in myString.split('x')]
 
-    return answer
-
-print(solution(3, 1, 25))
+print(solution("oxooxoxxox"))
