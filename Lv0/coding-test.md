@@ -880,3 +880,16 @@ def solution(n):
 def solution(myString):
     return [len(i) for i in myString.split('x')]
 ```
+
+## 문자열 바꿔서 찾기
+
+```py
+def solution(myString, pat):
+    s = myString.replace('A','@').replace('B','A').replace('@','B')
+    
+    if s.find(pat) != -1:
+        answer = 1
+    else:
+        answer = 0
+    return answer
+```
