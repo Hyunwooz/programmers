@@ -893,3 +893,10 @@ def solution(myString, pat):
         answer = 0
     return answer
 ```
+
+## A 강조하기
+
+```py
+def solution(myString):
+    return myString.lower().replace('a','A')
+```
