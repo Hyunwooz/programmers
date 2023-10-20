@@ -1,10 +1,11 @@
-def solution(myString, pat):
-    s = myString.replace('A','@').replace('B','A').replace('@','B')
-    
-    if s.find(pat) != -1:
-        answer = 1
-    else:
-        answer = 0
-    return answer
+def solution(s, n):
+    s = list(s)
+    for i in range(len(s)):
+        if s[i].isupper():
+            s[i]=chr((ord(s[i]) - ord('A') + n) % 26 + ord('A'))
+        elif s[i].islower():
+            s[i]=chr((ord(s[i]) - ord('a') + n) % 26 + ord('a'))
 
-print(solution("ABBAA","AABB"))
+    return "".join(s)
+
+print(solution('A',1))

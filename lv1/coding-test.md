@@ -492,7 +492,7 @@ def solution(numbers):
     return answer
 ```
 
-# 음양 더하기
+### 음양 더하기
 
 ```py
 def solution(absolutes, signs):
@@ -505,7 +505,7 @@ def solution(absolutes, signs):
     return answer
 ```
 
-# 부족한 금액 계산하기
+### 부족한 금액 계산하기
 
 ```py
 def solution(price, money, count):
@@ -517,7 +517,7 @@ def solution(price, money, count):
     return result - money
 ```
 
-# 가운데 글자 가져오기
+### 가운데 글자 가져오기
 
 ```py
 def solution(s):
@@ -531,7 +531,7 @@ def solution(s):
     return answer
 ```
 
-# 같은 숫자는 싫어
+### 같은 숫자는 싫어
 
 ```py
 def solution(arr):
@@ -545,7 +545,7 @@ def solution(arr):
             answer.append(y)
 ```
 
-# 수박수박수박수박수?
+### 수박수박수박수박수?
 
 ```py
 def solution(n):
@@ -558,14 +558,14 @@ def solution(n):
     return answer
 ```
 
-# 직사각형 별찍기
+### 직사각형 별찍기
 
 ```py
 a, b = map(int, input().strip().split(' '))
 print(('*'*a+'\n')*b)
 ```
 
-# 이상한 문자 만들기
+### 이상한 문자 만들기
 
 ```py
 def solution(s):
@@ -582,7 +582,7 @@ def solution(s):
     return ' '.join(new_list)
 ```
 
-# 내적
+### 내적
 
 ```py
 def solution(a, b):
@@ -592,7 +592,7 @@ def solution(a, b):
     return answer
 ```
 
-# 숫자 문자열과 영단어
+### 숫자 문자열과 영단어
 
 ```py
 def solution(s):
@@ -605,7 +605,7 @@ def solution(s):
     return int(s)
 ```
 
-# 콜라 문제
+### 콜라 문제
 
 ```py
 def solution(a, b, n):
@@ -616,4 +616,18 @@ def solution(a, b, n):
         answer += t * b
 
     return answer
+```
+
+### 시저 암호
+
+```py
+def solution(s, n):
+    s = list(s)
+    for i in range(len(s)):
+        if s[i].isupper():
+            s[i]=chr((ord(s[i]) - ord('A') + n) % 26 + ord('A'))
+        elif s[i].islower():
+            s[i]=chr((ord(s[i]) - ord('a') + n) % 26 + ord('a'))
+
+    return "".join(s)
 ```
