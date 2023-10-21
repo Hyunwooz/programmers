@@ -631,3 +631,30 @@ def solution(s, n):
 
     return "".join(s)
 ```
+
+### 기사단원의 무기
+
+```py
+def divisor(n):
+    result = []
+
+    for i in range(1, int(n**(1/2))+1):
+        if n % i == 0:
+            result.append(i)
+            if ((i**2) != n) :
+                result.append(n//i)
+
+    return len(result)
+
+def solution(number, limit, power):
+    answer = 0
+    
+    for i in range(1,number+1):
+        sword = divisor(i)
+        if sword > limit:
+            answer += power
+        else:
+            answer += sword
+
+    return answer
+```
