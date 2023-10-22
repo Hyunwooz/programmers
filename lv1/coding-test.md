@@ -682,3 +682,16 @@ def solution(number, limit, power):
 
     return answer
 ```
+
+### 소수 찾기 (feat. 에라토스테네스의 체)
+
+```py
+def solution(n):
+    num_list = set(i for i in range(2,n+1)) 
+    
+    for i in range(2, int(n ** 1/2) + 1):
+        if i in num_list:
+            num_list -= set(i for i in range(i*2, n+1,i))
+            
+    return len(num_list)
+```
