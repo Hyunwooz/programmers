@@ -695,3 +695,13 @@ def solution(n):
             
     return len(num_list)
 ```
+
+### 문자열 다루기 기본
+
+```py
+def solution(s):
+    if len(s) in [4,6]:
+        if s.isdigit():
+            return True
+    return False
+```
