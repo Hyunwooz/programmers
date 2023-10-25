@@ -1,25 +1,10 @@
-from itertools import *
-
-def prime(n):
-    result = []
-
-    for i in range(1, int(n**(1/2))+1):
-        if n % i == 0:
-            result.append(i)
-            if ((i**2) != n) :
-                result.append(n//i)
-                
-    if len(result) == 2:
-        return True
-    else:
-        return False
-
-def solution(nums):
-    numlist = list(combinations(nums, 3))
-    answer = 0
-    
-    for num in numlist:
-        if prime(sum(num)):
-            answer += 1
-
+def solution(arr1, arr2):
+    answer = []
+    for a,b in zip(arr1,arr2):
+        arr = []
+        for i, j in zip(a,b):
+            arr.append(i+j)
+        answer.append(arr)
     return answer
+
+print(solution([[1,2],[2,3]],[[3,4],[5,6]]))
