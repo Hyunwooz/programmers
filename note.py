@@ -1,10 +1,16 @@
-def solution(arr1, arr2):
-    answer = []
-    for a,b in zip(arr1,arr2):
-        arr = []
-        for i, j in zip(a,b):
-            arr.append(i+j)
-        answer.append(arr)
+
+def solution(n):
+    answer = 1
+
+    for i in range(1, n//2 + 1):
+        sum = 0
+        while sum < n:
+            sum += i
+
+            if sum == n:
+                answer += 1
+                break
+            
     return answer
 
-print(solution([[1,2],[2,3]],[[3,4],[5,6]]))
+print(solution(15))
