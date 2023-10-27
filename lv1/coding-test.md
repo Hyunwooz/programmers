@@ -748,3 +748,14 @@ def solution(arr1, arr2):
         answer.append(arr)
     return answer
 ```
+
+### 자연수 뒤집어 배열로 만들기
+
+```py
+def solution(n):
+    arr = list(str(n))
+    answer = []
+    for i in range(0,len(arr)):
+        answer.append(int(arr.pop()))
+    return answer
+```
