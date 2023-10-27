@@ -900,3 +900,16 @@ def solution(myString, pat):
 def solution(myString):
     return myString.lower().replace('a','A')
 ```
+
+## n보다 커질 때까지 더하기
+
+```py
+def solution(numbers, n):
+    answer = 0
+    
+    for i in numbers:
+        if answer <= n:
+            answer += i
+            
+    return answer
+```
