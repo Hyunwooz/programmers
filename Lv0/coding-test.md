@@ -913,3 +913,11 @@ def solution(numbers, n):
             
     return answer
 ```
+
+## 종이 자르기
+
+```py
+def solution(M, N):
+    answer = M * N - 1
+    return answer
+```
