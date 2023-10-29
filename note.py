@@ -1,8 +1,10 @@
 def solution(n):
-    arr = list(str(n))
-    answer = []
-    for i in range(0,len(arr)):
-        answer.append(int(arr.pop()))
-    return answer
+    nxt = n + 1
+    while True:
+        if str(bin(n)).count('1') == str(bin(nxt)).count('1'):
+            break       
+        nxt += 1
+        
+    return nxt
 
-print(solution(12345))
+print(solution(10))
