@@ -1,10 +1,17 @@
-def solution(n):
-    nxt = n + 1
-    while True:
-        if str(bin(n)).count('1') == str(bin(nxt)).count('1'):
-            break       
-        nxt += 1
-        
-    return nxt
+def solution(s):
+    
+    new_list = []
 
-print(solution(10))
+    for i in s:
+        new_list.append(i)
+        
+        if len(new_list) > 1 and new_list[-1] == new_list[-2]:
+            new_list.pop()
+            new_list.pop()
+    
+    if len(new_list) == 0:
+        return 1
+    else:
+        return 0
+
+print(solution('baabaa'))
