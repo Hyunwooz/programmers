@@ -1,17 +1,16 @@
-def solution(s):
+def solution(brown, yellow):
+    block = brown + yellow
+    x = int(block ** 0.5)
     
-    new_list = []
-
-    for i in s:
-        new_list.append(i)
+    while True:
+        y = block // x
+        if x >= y:
+            if (x-2)*(y-2) == yellow:
+                if x * y == block:
+                    break
+        x += 1
         
-        if len(new_list) > 1 and new_list[-1] == new_list[-2]:
-            new_list.pop()
-            new_list.pop()
-    
-    if len(new_list) == 0:
-        return 1
-    else:
-        return 0
+    return [x,y]
 
-print(solution('baabaa'))
+
+print(solution(18,6))
