@@ -921,3 +921,10 @@ def solution(M, N):
     answer = M * N - 1
     return answer
 ```
+
+## n 번째 원소부터
+
+```py
+def solution(num_list, n):
+    return num_list[n-1:]
+```
