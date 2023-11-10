@@ -52,3 +52,65 @@ def solution(A,B):
 
     return answer
 ```
+
+## 다음 큰 숫자
+
+```py
+def solution(n):
+    nxt = n + 1
+    while True:
+        if str(bin(n)).count('1') == str(bin(nxt)).count('1'):
+            break       
+        nxt += 1
+        
+    return nxt
+```
+
+## 피보나치 수
+
+```py
+def solution(n):
+    curr = 0
+    next = 1
+    for i in range(1,n):
+        curr , next = next , curr + next
+    return next % 1234567
+```
+
+## 짝지어 제거하기
+
+```py
+def solution(s):
+    
+    new_list = []
+
+    for i in s:
+        new_list.append(i)
+        
+        if len(new_list) > 1 and new_list[-1] == new_list[-2]:
+            new_list.pop()
+            new_list.pop()
+    
+    if len(new_list) == 0:
+        return 1
+    else:
+        return 0
+```
+
+## 카펫
+
+```py
+def solution(brown, yellow):
+    block = brown + yellow
+    x = int(block ** 0.5)
+    
+    while True:
+        y = block // x
+        if x >= y:
+            if (x-2)*(y-2) == yellow:
+                if x * y == block:
+                    break
+        x += 1
+        
+    return [x,y]
+```

@@ -923,3 +923,18 @@ def solution(num_list, n):
     else:
         return 0
 ```
+
+## 종이 자르기
+
+```py
+def solution(M, N):
+    answer = M * N - 1
+    return answer
+```
+
+## n 번째 원소부터
+
+```py
+def solution(num_list, n):
+    return num_list[n-1:]
+```

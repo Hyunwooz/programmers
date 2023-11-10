@@ -1,16 +1,16 @@
+def solution(brown, yellow):
+    block = brown + yellow
+    x = int(block ** 0.5)
+    
+    while True:
+        y = block // x
+        if x >= y:
+            if (x-2)*(y-2) == yellow:
+                if x * y == block:
+                    break
+        x += 1
+        
+    return [x,y]
 
-def solution(n):
-    answer = 1
 
-    for i in range(1, n//2 + 1):
-        sum = 0
-        while sum < n:
-            sum += i
-
-            if sum == n:
-                answer += 1
-                break
-            
-    return answer
-
-print(solution(15))
+print(solution(18,6))
