@@ -938,3 +938,10 @@ def solution(M, N):
 def solution(num_list, n):
     return num_list[n-1:]
 ```
+
+## 공백으로 구분하기 1
+
+```py
+def solution(my_string):
+    return my_string.split(' ')
+```
