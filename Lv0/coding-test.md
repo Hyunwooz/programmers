@@ -945,3 +945,10 @@ def solution(num_list, n):
 def solution(my_string):
     return my_string.split(' ')
 ```
+
+## 대문자로 바꾸기
+
+```py
+def solution(myString):
+    return myString.upper()
+```
