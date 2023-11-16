@@ -928,3 +928,15 @@ def solution(M, N):
 def solution(num_list, n):
     return num_list[n-1:]
 ```
+
+## 암호 해독
+
+```py
+def solution(cipher, code):
+    decoding = []
+    for i in range(0,len(cipher)+1,code):
+        if i == 0:
+            continue
+        decoding.append(cipher[i-1])
+    return ''.join(decoding)
+```
