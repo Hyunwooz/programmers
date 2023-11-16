@@ -914,6 +914,16 @@ def solution(numbers, n):
     return answer
 ```
 
+## 정수 찾기
+
+```py
+def solution(num_list, n):
+    if n in num_list:
+        return 1
+    else:
+        return 0
+```
+
 ## 종이 자르기
 
 ```py
@@ -939,4 +949,18 @@ def solution(cipher, code):
             continue
         decoding.append(cipher[i-1])
     return ''.join(decoding)
+```
+
+## 공백으로 구분하기 1
+
+```py
+def solution(my_string):
+    return my_string.split(' ')
+```
+
+## 대문자로 바꾸기
+
+```py
+def solution(myString):
+    return myString.upper()
 ```
