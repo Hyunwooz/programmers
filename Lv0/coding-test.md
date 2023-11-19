@@ -964,3 +964,13 @@ def solution(my_string):
 def solution(myString):
     return myString.upper()
 ```
+
+## 접두사인지 확인하기
+
+```py
+def solution(my_string, is_prefix):
+    for i in range(0,len(my_string)):
+        if my_string[:i] == is_prefix:
+            return 1
+    return 0
+```
