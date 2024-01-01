@@ -974,3 +974,14 @@ def solution(my_string, is_prefix):
             return 1
     return 0
 ```
+
+## ad 제거하기
+
+```py
+def solution(strArr):
+    answer = []
+    for s in strArr:
+       if s.find('ad') == -1:
+           answer.append(s)
+    return answer
+```
