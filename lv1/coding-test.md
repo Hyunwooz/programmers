@@ -759,3 +759,11 @@ def solution(n):
         answer.append(int(arr.pop()))
     return answer
 ```
+
+### 문자열 내림차순으로 배치하기
+
+```py
+def solution(s):
+    string = sorted(list(s),reverse=True)
+    return ''.join(string)
+```
