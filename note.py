@@ -1,16 +1,9 @@
-def solution(brown, yellow):
-    block = brown + yellow
-    x = int(block ** 0.5)
+def solution(sizes):
+    side1 = max(max(x) for x in sizes)
+    side2 = max(min(x) for x in sizes)
+    answer = side1 * side2
     
-    while True:
-        y = block // x
-        if x >= y:
-            if (x-2)*(y-2) == yellow:
-                if x * y == block:
-                    break
-        x += 1
-        
-    return [x,y]
+    return answer
 
 
-print(solution(18,6))
+print(solution([[10, 7], [12, 3], [8, 15], [14, 7], [5, 15]]))

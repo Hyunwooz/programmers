@@ -767,3 +767,14 @@ def solution(s):
     string = sorted(list(s),reverse=True)
     return ''.join(string)
 ```
+
+### 최소직사각형
+
+```py
+def solution(sizes):
+    side1 = max(max(x) for x in sizes)
+    side2 = max(min(x) for x in sizes)
+    answer = side1 * side2
+    
+    return answer
+```
