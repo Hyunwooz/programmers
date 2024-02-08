@@ -751,7 +751,7 @@ def solution(numbers):
 
 ```py
 def solution(age):
-    answer = 2023 - age 
+    answer = 2023 - age
     return answer
 ```
 
@@ -799,7 +799,7 @@ def solution(numbers):
         idx = numbers.index(max_)
         rec = numbers.pop(idx)
         arr.append(rec)
-        
+
     return arr[0] * arr[1]
 ```
 
@@ -807,7 +807,7 @@ def solution(numbers):
 
 ```py
 def solution(money):
-    
+
     coffee = money // 5500
     changes = money % 5500
     answer = [coffee,changes]
@@ -870,7 +870,7 @@ def solution(n):
     while n >= 1:
         n, rest = divmod(n,3)
         answer += str(rest)
-        
+
     return int(answer,3)
 ```
 
@@ -886,7 +886,7 @@ def solution(myString):
 ```py
 def solution(myString, pat):
     s = myString.replace('A','@').replace('B','A').replace('@','B')
-    
+
     if s.find(pat) != -1:
         answer = 1
     else:
@@ -906,11 +906,11 @@ def solution(myString):
 ```py
 def solution(numbers, n):
     answer = 0
-    
+
     for i in numbers:
         if answer <= n:
             answer += i
-            
+
     return answer
 ```
 
@@ -988,15 +988,15 @@ def solution(strArr):
 
 ## 짝수의 합
 
-```py
+````py
 def solution(n):
     answer = 0
-    
+
     for i in range(n+1):
         if i % 2 == 0:
             answer += i
     return answer```
-```
+````
 
 ## PCCE 기출문제 1번
 
@@ -1026,17 +1026,17 @@ def solution(route):
         if i == "N":
             north += 1
         elif i == "S" :
-            
+
 north -= 1
 
         elif i == "E" :
-            
+
 east += 1
 
-        elif i == 
+        elif i ==
 "W"
  :
-            
+
 east -= 1
 
     return [east, north]
@@ -1053,14 +1053,14 @@ def solution(storage, num):
             pos = clean_storage.index(storage[i])
             clean_num[pos] += num[i]
         else:
-            # 수정 전 코드 
+            # 수정 전 코드
             clean_storage.append(num[i])
             # 수정 후 코드
             clean_storage.append(storage[i])
             clean_num.append(num[i])
-            
+
     # 아래 코드에는 틀린 부분이 없습니다.
-            
+
     max_num = max(clean_num)
     answer = clean_storage[clean_num.index(max_num)]
     return answer
@@ -1118,4 +1118,25 @@ def solution(mode_type, humidity, val_set):
     elif mode_type == "minimum":
         answer = func3(humidity,val_set)
     return answer
+```
+
+## [PCCE 기출문제] 4번 / 저축
+
+```py
+start = int(input())
+before = int(input())
+after = int(input())
+
+money = start
+month = 1
+
+while money < 70:
+    money += before
+
+    month += 1
+while money < 100:
+    money += after
+    month += 1
+
+print(month)
 ```
