@@ -1153,3 +1153,17 @@ b_square = (c**2) - (a**2)
 
 print(b_square)
 ```
+
+## [PCCE 기출문제] 6번 / 가채점
+
+```py
+def solution(numbers, our_score, score_list):
+    answer = []
+    for i in range(len(numbers)):
+        if score_list[numbers[i]-1] == our_score[i]:
+            answer.append("Same")
+        else:
+            answer.append("Different")
+
+    return answer
+```
