@@ -1167,3 +1167,14 @@ def solution(numbers, our_score, score_list):
 
     return answer
 ```
+
+## 부분 문자열 이어 붙여 문자열 만들기
+
+```py
+def solution(my_strings, parts):
+    answer = ''
+    for i in range(len(my_strings)):
+        part = parts[i]
+        answer += my_strings[i][part[0]:part[1]+1]
+    return answer
+```
