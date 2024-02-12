@@ -1178,3 +1178,17 @@ def solution(my_strings, parts):
         answer += my_strings[i][part[0]:part[1]+1]
     return answer
 ```
+
+## 두 수의 차
+
+```py
+def solution(num1, num2):
+    return num1 - num2
+```
+
+## 문자열로 변환
+
+```py
+def solution(n):
+    return str(n)
+```
