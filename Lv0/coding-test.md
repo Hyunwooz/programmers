@@ -1192,3 +1192,11 @@ def solution(num1, num2):
 def solution(n):
     return str(n)
 ```
+
+## 숫자 찾기
+
+```py
+def solution(num, k):
+    answer = str(num).find(str(k))
+    return answer + 1 if answer != -1 else answer
+```
