@@ -274,7 +274,7 @@ def solution(n):
 def solution(s):
     is_p = s.lower().count("p")
     is_y = s.lower().count("y")
-    
+
     if is_p == is_y:
         return True
     elif is_p == 0 and is_y == 0:
@@ -298,7 +298,7 @@ def solution(s):
         else:
             new_str.append(w)
             answer.append(-1)
-            
+
     return answer
 ```
 
@@ -334,10 +334,10 @@ def solution(seoul):
 ```py
 def solution(phone_number):
     li = list(phone_number)
-    
+
     for i in range(len(phone_number)-4):
         li[i] = '*'
-        
+
     return "".join(li)
 ```
 
@@ -352,7 +352,7 @@ def solution(number):
     for li in printList:
         if sum(li) == 0:
             answer += 1
-            
+
     return answer
 ```
 
@@ -361,7 +361,7 @@ def solution(number):
 ```py
 def solution(array, commands):
     answer = []
-    
+
     for command in commands:
         x,y,z = command
         new_array = array[x-1:y]
@@ -383,7 +383,7 @@ def solution(d, budget):
         if n > budget:
             break
         answer += 1
-    
+
     return answer
 ```
 
@@ -394,12 +394,12 @@ def solution(x):
     int_sum = 0
     for i in range(0,len(str(x))):
         int_sum += int(str(x)[i])
-    
+
     if x % int_sum == 0:
         answer = True
     else:
         answer = False
-        
+
     return answer
 ```
 
@@ -411,7 +411,7 @@ from datetime import datetime
 def solution(a, b):
     strToDate = datetime.strptime(f'2016-{a}-{b}', "%Y-%m-%d")
     week = strToDate.weekday()
-    
+
     if week == 0:
         answer = 'MON'
     elif week == 1:
@@ -426,7 +426,7 @@ def solution(a, b):
         answer = 'SAT'
     elif week == 6:
         answer = 'SUN'
-    
+
     return answer
 ```
 
@@ -438,7 +438,7 @@ def solution(a, b):
     return sum(list(range(min(int_),max(int_)+1)))
 ```
 
-### 콜라츠 추측
+## 콜라츠 추측
 
 ```py
 def solution(num):
@@ -448,15 +448,15 @@ def solution(num):
         if count > 500:
             count = -1
             break
-        
+
         if num % 2 == 0:
             num = num / 2
         else:
-            num = (num * 3) + 1 
+            num = (num * 3) + 1
     return count
 ```
 
-### 제일 작은 수 제거하기
+## 제일 작은 수 제거하기
 
 ```py
 def solution(arr):
@@ -468,7 +468,7 @@ def solution(arr):
     return arr
 ```
 
-### 나누어 떨어지는 숫자 배열
+## 나누어 떨어지는 숫자 배열
 
 ```py
 def solution(arr, divisor):
@@ -481,7 +481,7 @@ def solution(arr, divisor):
     return sorted(answer)
 ```
 
-### 없는 숫자 더하기
+## 없는 숫자 더하기
 
 ```py
 def solution(numbers):
@@ -492,7 +492,7 @@ def solution(numbers):
     return answer
 ```
 
-### 음양 더하기
+## 음양 더하기
 
 ```py
 def solution(absolutes, signs):
@@ -505,7 +505,7 @@ def solution(absolutes, signs):
     return answer
 ```
 
-### 부족한 금액 계산하기
+## 부족한 금액 계산하기
 
 ```py
 def solution(price, money, count):
@@ -517,7 +517,7 @@ def solution(price, money, count):
     return result - money
 ```
 
-### 가운데 글자 가져오기
+## 가운데 글자 가져오기
 
 ```py
 def solution(s):
@@ -527,11 +527,11 @@ def solution(s):
         answer = s[s1:s2]
     else:
         answer = s[len(s) // 2]
-    
+
     return answer
 ```
 
-### 같은 숫자는 싫어
+## 같은 숫자는 싫어
 
 ```py
 def solution(arr):
@@ -545,7 +545,7 @@ def solution(arr):
             answer.append(y)
 ```
 
-### 수박수박수박수박수?
+## 수박수박수박수박수?
 
 ```py
 def solution(n):
@@ -558,14 +558,14 @@ def solution(n):
     return answer
 ```
 
-### 직사각형 별찍기
+## 직사각형 별찍기
 
 ```py
 a, b = map(int, input().strip().split(' '))
 print(('*'*a+'\n')*b)
 ```
 
-### 이상한 문자 만들기
+## 이상한 문자 만들기
 
 ```py
 def solution(s):
@@ -582,7 +582,7 @@ def solution(s):
     return ' '.join(new_list)
 ```
 
-### 내적
+## 내적
 
 ```py
 def solution(a, b):
@@ -592,20 +592,20 @@ def solution(a, b):
     return answer
 ```
 
-### 숫자 문자열과 영단어
+## 숫자 문자열과 영단어
 
 ```py
 def solution(s):
-    
+
     words = ["zero","one","two","three","four","five","six","seven","eight","nine"]
-    
+
     for n,v in enumerate(words):
         s = s.replace(v,str(n))
 
     return int(s)
 ```
 
-### 콜라 문제
+## 콜라 문제
 
 ```py
 def solution(a, b, n):
@@ -618,7 +618,7 @@ def solution(a, b, n):
     return answer
 ```
 
-### 시저 암호
+## 시저 암호
 
 ```py
 def solution(s, n):
@@ -632,7 +632,7 @@ def solution(s, n):
     return "".join(s)
 ```
 
-### 약수의 개수와 덧셈
+## 약수의 개수와 덧셈
 
 ```py
 def divisor(n):
@@ -656,7 +656,7 @@ def solution(left, right):
     return answer
 ```
 
-### 기사단원의 무기
+## 기사단원의 무기
 
 ```py
 def divisor(n):
@@ -672,7 +672,7 @@ def divisor(n):
 
 def solution(number, limit, power):
     answer = 0
-    
+
     for i in range(1,number+1):
         sword = divisor(i)
         if sword > limit:
@@ -683,20 +683,20 @@ def solution(number, limit, power):
     return answer
 ```
 
-### 소수 찾기 (feat. 에라토스테네스의 체)
+## 소수 찾기 (feat. 에라토스테네스의 체)
 
 ```py
 def solution(n):
-    num_list = set(i for i in range(2,n+1)) 
-    
+    num_list = set(i for i in range(2,n+1))
+
     for i in range(2, int(n ** 1/2) + 1):
         if i in num_list:
             num_list -= set(i for i in range(i*2, n+1,i))
-            
+
     return len(num_list)
 ```
 
-### 문자열 다루기 기본
+## 문자열 다루기 기본
 
 ```py
 def solution(s):
@@ -706,7 +706,7 @@ def solution(s):
     return False
 ```
 
-### 소수 만들기
+## 소수 만들기
 
 ```py
 from itertools import *
@@ -719,7 +719,7 @@ def prime(n):
             result.append(i)
             if ((i**2) != n) :
                 result.append(n//i)
-                
+
     if len(result) == 2:
         return True
     else:
@@ -728,7 +728,7 @@ def prime(n):
 def solution(nums):
     numlist = list(combinations(nums, 3))
     answer = 0
-    
+
     for num in numlist:
         if prime(sum(num)):
             answer += 1
@@ -736,7 +736,7 @@ def solution(nums):
     return answer
 ```
 
-### 행렬의 덧셈
+## 행렬의 덧셈
 
 ```py
 def solution(arr1, arr2):
@@ -749,7 +749,7 @@ def solution(arr1, arr2):
     return answer
 ```
 
-### 자연수 뒤집어 배열로 만들기
+## 자연수 뒤집어 배열로 만들기
 
 ```py
 def solution(n):
@@ -760,7 +760,7 @@ def solution(n):
     return answer
 ```
 
-### 문자열 내림차순으로 배치하기
+## 문자열 내림차순으로 배치하기
 
 ```py
 def solution(s):
@@ -768,13 +768,23 @@ def solution(s):
     return ''.join(string)
 ```
 
-### 최소직사각형
+## 최소직사각형
 
 ```py
 def solution(sizes):
     side1 = max(max(x) for x in sizes)
     side2 = max(min(x) for x in sizes)
     answer = side1 * side2
-    
+
     return answer
+```
+
+## 두 개 뽑아서 더하기
+
+```py
+from itertools import *
+
+def solution(list):
+    answer = [(a+b) for a,b in combinations(list, 2)]
+    return sorted([*set(answer)])
 ```
