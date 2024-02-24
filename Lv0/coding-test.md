@@ -998,6 +998,13 @@ def solution(n):
     return answer```
 ````
 
+## 배열 원소의 길이
+
+````py
+def solution(strlist):
+    return [len(s) for s in strlist]
+````
+
 ## PCCE 기출문제 1번
 
 ```py
