@@ -986,6 +986,13 @@ def solution(strArr):
     return answer
 ```
 
+## 정수 부분
+
+```py
+def solution(flo):
+    return int(flo)
+```
+
 ## 문자열안에 문자열
 
 ```py
