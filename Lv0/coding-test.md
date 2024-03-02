@@ -1226,6 +1226,13 @@ def solution(num, k):
     return answer + 1 if answer != -1 else answer
 ```
 
+## 문자열 정수 변환
+
+```py
+def solution(n_str):
+    return int(n_str)
+```
+
 ## 가위 바위 보
 
 ```py
