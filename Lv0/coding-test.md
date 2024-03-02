@@ -1240,3 +1240,10 @@ def solution(rsp):
             answer += "2"
     return answer
 ```
+
+## n개 간격의 원소들
+
+```py
+def solution(num_list, n):
+    return [num_list[i] for i in range(0,len(num_list),n)]
+```
