@@ -1226,6 +1226,17 @@ def solution(num, k):
     return answer + 1 if answer != -1 else answer
 ```
 
+## 원하는 문자열 찾기
+
+```py
+def solution(myString, pat):
+    answer = 0
+    if pat.upper() in myString.upper():
+        answer = 1
+        
+    return answer
+```
+
 ## 문자열 정수 변환
 
 ```py
