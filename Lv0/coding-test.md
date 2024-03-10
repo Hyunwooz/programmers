@@ -1237,6 +1237,18 @@ def solution(myString, pat):
     return answer
 ```
 
+## 길이에 따른 연산
+
+```py
+from math import prod
+
+def solution(num_list):
+    if len(num_list) <= 10:
+        return prod(num_list)
+    else:
+        return sum(num_list)
+```
+
 ## 문자열 정수 변환
 
 ```py
