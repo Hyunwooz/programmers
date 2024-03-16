@@ -1237,6 +1237,13 @@ def solution(myString, pat):
     return answer
 ```
 
+## 순서 바꾸기
+
+```py
+def solution(num_list, n):
+    return  num_list[n:] + num_list[:n]
+```
+
 ## 길이에 따른 연산
 
 ```py
