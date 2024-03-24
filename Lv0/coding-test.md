@@ -1244,6 +1244,13 @@ def solution(n, k):
     return [i for i in range(k,n+1,k)]
 ```
 
+## rny_string
+
+```py
+def solution(rny_string):
+    return rny_string.replace('m','rn')
+```
+
 ## 순서 바꾸기
 
 ```py
