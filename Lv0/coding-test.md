@@ -1244,6 +1244,13 @@ def solution(n, k):
     return [i for i in range(k,n+1,k)]
 ```
 
+## 뒤에서 5등 까지
+
+```py
+def solution(num_list):
+    return sorted(num_list)[:5]
+```
+
 ## 뒤에서 5등 위로
 
 ```py
