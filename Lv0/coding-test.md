@@ -1265,6 +1265,13 @@ def solution(rny_string):
     return rny_string.replace('m','rn')
 ```
 
+## 0 떼기
+
+```py
+def solution(n_str):
+    return str(int(n_str))
+```
+
 ## 순서 바꾸기
 
 ```py
