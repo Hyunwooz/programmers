@@ -1279,6 +1279,13 @@ def solution(num_list, n):
     return  num_list[n:] + num_list[:n]
 ```
 
+## 특정 문자를 대문자로 바꾸기
+
+```py
+def solution(my_string, alp):
+    return my_string.replace(alp,alp.upper())
+```
+
 ## 길이에 따른 연산
 
 ```py
