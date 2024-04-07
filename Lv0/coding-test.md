@@ -1286,6 +1286,17 @@ def solution(my_string, alp):
     return my_string.replace(alp,alp.upper())
 ```
 
+## 꼬리 문자열
+
+```py
+def solution(str_list, ex):
+    answer = ''
+    for string in str_list:
+        if ex not in string:
+            answer += string
+    return answer
+```
+
 ## 길이에 따른 연산
 
 ```py
