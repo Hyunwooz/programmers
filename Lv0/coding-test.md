@@ -1286,6 +1286,17 @@ def solution(my_string, alp):
     return my_string.replace(alp,alp.upper())
 ```
 
+## 중복된 문자 제거
+
+```py
+def solution(my_string):
+    answer = []
+    for i in my_string:
+        if i not in answer:
+            answer.append(i)
+    return ''.join(answer)
+```
+
 ## 꼬리 문자열
 
 ```py
