@@ -1286,6 +1286,16 @@ def solution(my_string, alp):
     return my_string.replace(alp,alp.upper())
 ```
 
+## 세균 증식
+
+```py
+def solution(n, t):
+    for i in range(t):
+        n = n * 2
+    
+    return n
+```
+
 ## 중복된 문자 제거
 
 ```py
