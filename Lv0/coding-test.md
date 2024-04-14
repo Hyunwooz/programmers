@@ -1286,6 +1286,17 @@ def solution(my_string, alp):
     return my_string.replace(alp,alp.upper())
 ```
 
+## 할일 목록
+
+```py
+def solution(todo_list, finished):
+    answer = []
+    for i in range(len(todo_list)):
+        if not finished[i]:
+            answer.append(todo_list[i])
+    return answer
+```
+
 ## 세균 증식
 
 ```py
