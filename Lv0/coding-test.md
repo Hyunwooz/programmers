@@ -1018,10 +1018,10 @@ def solution(n):
 
 ## 배열 원소의 길이
 
-````py
+```py
 def solution(strlist):
     return [len(s) for s in strlist]
-````
+```
 
 ## PCCE 기출문제 1번
 
@@ -1204,6 +1204,22 @@ def solution(my_strings, parts):
     return answer
 ```
 
+## 주사위 게임
+
+```py
+def solution(a, b):
+
+    answer = 0
+    if a % 2 == 1 and b % 2 == 1:
+        answer = a ** 2 + b ** 2
+    elif a % 2 == 0 and b % 2 == 0:
+        answer = abs(a - b)
+    else:
+        answer = 2 * (a + b)
+
+    return answer
+```
+
 ## 두 수의 차
 
 ```py
@@ -1233,7 +1249,7 @@ def solution(myString, pat):
     answer = 0
     if pat.upper() in myString.upper():
         answer = 1
-        
+
     return answer
 ```
 
@@ -1303,7 +1319,7 @@ def solution(todo_list, finished):
 def solution(n, t):
     for i in range(t):
         n = n * 2
-    
+
     return n
 ```
 
