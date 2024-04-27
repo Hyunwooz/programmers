@@ -1272,6 +1272,18 @@ def solution(n_str):
     return str(int(n_str))
 ```
 
+## 조건에 맞는 수열 변환하기 3
+
+```py
+def solution(arr, k):
+    answer = []
+    if k % 2 != 0:
+        answer = [i*k for i in arr]
+    else:
+        answer = [i+k for i in arr]
+    return answer
+```
+
 ## 순서 바꾸기
 
 ```py
