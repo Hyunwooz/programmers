@@ -1288,6 +1288,19 @@ def solution(n_str):
     return str(int(n_str))
 ```
 
+## 가까운 1 찾기
+
+```py
+def solution(arr, idx):
+    answer = -1
+    
+    for i in range(idx,len(arr)):
+        if arr[i] == 1:
+            answer = i
+            break
+    return answer
+```
+
 ## 조건에 맞는 수열 변환하기 3
 
 ```py
