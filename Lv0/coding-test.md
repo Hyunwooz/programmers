@@ -1281,6 +1281,13 @@ def solution(rny_string):
     return rny_string.replace('m','rn')
 ```
 
+## 진료 순서 정하기
+
+```py
+def solution(emergency):
+    return [sorted(emergency, reverse=True).index(e) + 1 for e in emergency]
+```
+
 ## 0 떼기
 
 ```py
