@@ -1281,6 +1281,16 @@ def solution(rny_string):
     return rny_string.replace('m','rn')
 ```
 
+## 부분 문자열
+
+```py
+def solution(str1, str2):
+    if str1 in str2:
+        return 1
+    else:
+        return 0
+```
+
 ## 진료 순서 정하기
 
 ```py
