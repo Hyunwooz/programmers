@@ -1291,6 +1291,13 @@ def solution(str1, str2):
         return 0
 ```
 
+## 문자열 정수의 합
+
+```py
+def solution(num_str):
+    return sum([int(i) for i in num_str])
+```
+
 ## 진료 순서 정하기
 
 ```py
