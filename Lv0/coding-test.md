@@ -1291,6 +1291,13 @@ def solution(str1, str2):
         return 0
 ```
 
+## A로 B 만들기
+
+```py
+def solution(before, after):
+    return 1 if sorted(before) == sorted(after) else 0
+```
+
 ## 문자열 정수의 합
 
 ```py
