@@ -1193,6 +1193,13 @@ def solution(numbers, our_score, score_list):
     return answer
 ```
 
+## 부분 문자열인지 확인하기
+
+```py
+def solution(my_string, target):
+    return 1 if target in my_string else 0
+```
+
 ## 부분 문자열 이어 붙여 문자열 만들기
 
 ```py
@@ -1324,7 +1331,7 @@ def solution(n_str):
 ```py
 def solution(arr, idx):
     answer = -1
-    
+
     for i in range(idx,len(arr)):
         if arr[i] == 1:
             answer = i
