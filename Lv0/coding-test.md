@@ -1200,6 +1200,23 @@ def solution(my_string, target):
     return 1 if target in my_string else 0
 ```
 
+## 옷가게 할인받기
+
+```py
+def solution(price):
+
+    answer = price
+
+    if 300000 > price >= 100000:
+        answer = price * 0.95
+    elif 500000 > price >= 300000:
+        answer = price * 0.90
+    elif price >= 500000:
+        answer = price * 0.80
+
+    return int(answer)
+```
+
 ## 부분 문자열 이어 붙여 문자열 만들기
 
 ```py
