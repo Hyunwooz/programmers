@@ -1276,6 +1276,16 @@ def solution(num, k):
     return answer + 1 if answer != -1 else answer
 ```
 
+## 문자 반복 출력하기
+
+```py
+def solution(my_string, n):
+    answer = ''
+    for i in my_string:
+        answer += i * n
+    return answer
+```
+
 ## 원하는 문자열 찾기
 
 ```py
