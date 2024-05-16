@@ -986,6 +986,16 @@ def solution(strArr):
     return answer
 ```
 
+## 배열의 원소 삭제하기
+
+```py
+def solution(arr, delete_list):
+    for delete in delete_list:
+        if delete in arr:
+            arr.pop(arr.index(delete))
+    return arr
+```
+
 ## 정수 부분
 
 ```py
