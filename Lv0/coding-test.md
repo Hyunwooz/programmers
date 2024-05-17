@@ -1286,6 +1286,13 @@ def solution(my_string, n):
     return answer
 ```
 
+## 배열 자르기
+
+```py
+def solution(numbers, num1, num2):
+    return numbers[num1:num2+1]
+```
+
 ## 원하는 문자열 찾기
 
 ```py
