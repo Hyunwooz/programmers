@@ -1286,6 +1286,22 @@ def solution(my_string, n):
     return answer
 ```
 
+## 간단한 식 계산하기
+
+```py
+def solution(binomial):
+    a, op, b = binomial.split(' ')
+    answer = ''
+    if op == "+":
+        answer = int(a) + int(b)
+    elif op == '-':
+        answer = int(a) - int(b)
+    else:
+        answer = int(a) * int(b)
+    
+    return answer
+```
+
 ## 배열 자르기
 
 ```py
