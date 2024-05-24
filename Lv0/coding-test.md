@@ -1302,6 +1302,20 @@ def solution(binomial):
     return answer
 ```
 
+## 문자열 정렬하기
+
+```py
+def solution(my_string):
+    answer = []
+    for i in my_string:
+        try:
+            int(i)
+            answer.append(int(i))
+        except:
+            continue
+    return sorted(answer)
+```
+
 ## 배열 자르기
 
 ```py
