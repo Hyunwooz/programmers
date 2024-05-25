@@ -1302,7 +1302,7 @@ def solution(binomial):
     return answer
 ```
 
-## 문자열 정렬하기
+## 문자열 정렬하기 (1)
 
 ```py
 def solution(my_string):
@@ -1314,6 +1314,14 @@ def solution(my_string):
         except:
             continue
     return sorted(answer)
+```
+
+## 문자열 정렬하기 (2)
+
+```py
+def solution(my_string):
+    answer = sorted([i.lower() for i in my_string])
+    return ''.join(answer)
 ```
 
 ## 배열 자르기
