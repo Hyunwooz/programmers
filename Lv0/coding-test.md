@@ -1324,6 +1324,15 @@ def solution(my_string):
     return ''.join(answer)
 ```
 
+## 문자열 잘라서 정렬하기
+
+```py
+def solution(myString):
+    list_= myString.split('x')
+    
+    return sorted([v for v in list_ if v])
+```
+
 ## 배열 자르기
 
 ```py
